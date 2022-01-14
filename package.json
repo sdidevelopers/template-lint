@@ -1,10 +1,10 @@
 {
-  "name": "@sdidevelopers/aurelia-template-lint",
+  "name": "aurelia-template-lint-sdi",
   "description": "sanity check of Aurelia-flavor templates",
-  "author": "Meirion Hughes <crakinshot@yahoo.com>",
+  "author": "Lukas Weldon",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MeirionHughes/aurelia-template-lint"
+    "url": "https://github.com/sdidevelopers/aurelia-template-lint"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

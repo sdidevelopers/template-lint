@@ -1,5 +1,5 @@
 {
-  "name": "aurelia-template-lint",
+  "name": "@sdidevelopers/aurelia-template-lint",
   "description": "sanity check of Aurelia-flavor templates",
   "author": "Meirion Hughes <crakinshot@yahoo.com>",
   "repository": {
@@ -16,7 +16,7 @@
     }
   ],
   "license": "(Apache-2.0)",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "keywords": [
     "template",
     "html",
@@ -50,7 +50,10 @@
     "typescript-formatter": "^3.1.0"
   },
   "scripts": {
-    "test": "gulp test"
+    "test:gulp": "gulp compile:typescript && node example.js",
+    "test": "gulp test",
+    "clean": "rm -rf node_modules/ rm -rf package-lock.json",
+    "node:v": "node -v"
   },
   "dependencies": {
     "@types/node": "^6.0.37",
@@ -62,8 +65,9 @@
     "aurelia-templating": "^1.0.0",
     "aurelia-templating-binding": "^1.0.0",
     "glob": "7.0.x",
+    "node": "^11.15.0",
     "parse5": "2.2.x",
     "template-lint": "0.8.x",
-    "typescript": "^2.0.0"
+    "typescript": "^3.9.4"
   }
 }

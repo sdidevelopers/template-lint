@@ -59,6 +59,7 @@ export class ASTBuilder extends Rule {
     });
 
     parser.on("text", (text, loc) => {
+      if(current === null) current = new ASTNode();
       let child = new ASTTextNode();
       child.parent = current;
       child.expression = this.createTextExpression(text, loc.line, loc.col);
